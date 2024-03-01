@@ -33,7 +33,7 @@ body {
   /* Position from the left */
   transform: translate(-50%, -50%);
   /* Center the login container */
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(207, 206, 206,0);
   /* Semi-transparent background */
 }
 
@@ -66,7 +66,7 @@ body {
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.5);
   /* Adjust input background color */
-  color: #333;
+  color: #000000 !important;
   /* Adjust input text color */
 }
 
@@ -157,8 +157,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: black;
-  color: #ffffff;
+  background-color: rgb(255, 252, 252);
+  color: #000000;
 }
 
 #dashboard-container #logout {
@@ -198,21 +198,21 @@ button {
   /* Preserve aspect ratio and cover the entire container */
   transition: filter 2s ease;
   /* Smooth transition for the filter property */
+  
 }
 
 .image:hover {
-  animation: hueRotate 2s infinite;
+  animation: hueRotate 4s infinite;
   /* Apply the hue rotation animation on hover */
 }
 
 @keyframes hueRotate {
   0% {
     filter: hue-rotate(0deg);
-    /* Start with no hue rotation */
+   
   }
 
   100% {
     filter: hue-rotate(360deg);
-    /* Rotate the hue by 360 degrees */
   }
 }

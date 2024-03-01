@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if (!$login_successful) {
-            echo '<span style="color: red;">Invalid username or password.</span>';
+            echo '<span style="color: white;">Invalid username or password.</span>';
         }
     } else {
-        echo '<span style="color: red;">Please enter both username and password.</span>';
+        echo '<span style="color: white;">Please enter both username and password.</span>';
     }
 }
 ?>
