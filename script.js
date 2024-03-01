@@ -48,22 +48,24 @@ $(document).ready(function () {
   $("#register-form").submit(function (e) {
     e.preventDefault();
     var formData = {
-      "new-username": $("#new-username").val(),
-      "new-password": $("#new-password").val(),
+        "new-username": $("#new-username").val(),
+        "new-password": $("#new-password").val(),
+        "cnf-password": $("#cnf-password").val()
     };
     $.ajax({
-      type: "POST",
-      url: "adddeatils.php",
-      data: formData,
-      success: function (response) {
-        $("#response").html(response);
-        // Redirect to index.php after successful registration
-        if (response.trim() === "User registered successfully!") {
-          window.location = "index.html";
+        type: "POST",
+        url: "adddeatils.php",
+        data: formData,
+        success: function (response) {
+            $("#response").html(response);
+            // Redirect to index.php after successful registration
+            if (response.trim() === "User registered successfully!") {
+                window.location = "index.html";
+            }
         }
-      },
     });
-  });
+});
+
 
   // Logout
   $("#logout").click(function () {

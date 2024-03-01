@@ -12,7 +12,8 @@
         <div id="response"></div>
         <form id="register-form">
             <input type="text" id="new-username" name="new-username" placeholder="New Username" ><br>
-            <input type="password" id="new-password" name="new-password" placeholder="New Password" ><br>
+           <input type="password" id="new-password" name="new-password" placeholder="New Password" ><br>
+           <input type="password" id="cnf-password" name="cnf-password" placeholder="Confirm Password" ><br>
             <button type="submit">Register</button>
         </form>
     </div>
